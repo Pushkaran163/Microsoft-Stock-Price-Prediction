@@ -6,7 +6,7 @@ This project aims to predict Microsoft stock prices using historical data and ma
 
 ## Table of Contents
 
--Introduction
+- Introduction
 - Installation
 - Data Description
 - Exploratory Data Analysis
@@ -37,12 +37,6 @@ The dataset used in this project is the Microsoft stock price data and contains 
 - volume: Volume of stocks traded.
 - Name: Stock name (MSFT in this case).
   
-## Sample Data
-
-index	date	open	high	low	close	volume	Name
-0	2013-02-08	27.35	27.71	27.31	27.55	33318306	MSFT
-1	2013-02-11	27.65	27.92	27.50	27.86	32247549	MSFT
-
 ## Exploratory Data Analysis
 
 We performed an exploratory data analysis (EDA) to understand the dataset better. This includes:
@@ -87,8 +81,11 @@ The trained model is evaluated on test data to assess its performance. Visualiza
 ### Example Visualization
 
 plt.figure(figsize=(10, 8))
+
 plt.plot(train['close'], c="b")
+
 plt.title('Microsoft Stock Close Price')
+
 plt.ylabel("Close")
 
 ## Usage
